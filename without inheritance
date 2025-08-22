@@ -1,0 +1,23 @@
+package simple;
+public class OverloadingExample {
+void display( ) {
+System.out.println("Display method with no parameters");
+}
+void display(int a) {
+System.out.println("Display method with one integer: " + a);
+}
+void display(String name, int age) {
+System.out.println("Name: " + name + ", Age:" + age);
+}
+
+public static void main(String[] args) {
+OverloadingExample obj = new OverloadingExample();
+obj.display();
+obj.display(10);
+obj.display("Kiran", 25);
+}
+}
+Output:
+Display method with no parameters
+Display method with one integer: 10
+Name: Kiran, Age:25
