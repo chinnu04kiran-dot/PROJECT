@@ -1,0 +1,23 @@
+package simple;
+
+class Student {
+String name;
+int age;
+Student() {
+name = "Unknown";
+age = 0;
+System.out.println("Default constructor called.");
+}
+void display() {
+System.out.println("Name: " + name);
+System.out.println("Age: " + age);
+}
+public static void main(String[] args) {
+Student s1 = new Student();
+s1.display();
+}
+}
+Output:
+Default constructor called.
+Name: Unknown
+Age: 0
