@@ -1,0 +1,29 @@
+class Shape {
+void area() {
+System.out.println("Area method with no parameters");
+}
+void area (int side) {
+System.out.println("Area of square: " + (side * side));
+}
+}
+class Rectangle extends Shape {
+void area (int length, int width) {
+System.out.println("Area of rectangle: " + (length * width));
+}
+
+public class OverloadingInheritance() {
+}
+public static void main(String[] args)
+{
+Shape rect;
+rect.area();
+rect.area();
+rect.area(5);
+rect.package simple;
+area(4);
+}
+}
+Output:
+Area method with no parameters
+Area of square: 25
+Area of rectangle: 24
