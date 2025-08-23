@@ -1,0 +1,41 @@
+public class Person {
+private String name;
+private int age;
+
+// Constructor
+public Person(String name, int age) {
+this.name = name;
+this.age = age;
+}
+
+// Setter for name
+public void setName(String name) {
+this.name = name;
+}
+
+// Setter for age
+public void setAge(int age) {
+this.age = age;
+}
+
+// Method to print person's info
+public void printInfo() {
+System.out.println("Name: " + name + ", Age: " + age);
+}
+
+// Main method to test
+public static void main(String[] args) {
+Person person1 = new Person("Alice", 25);
+person1.printInfo();
+
+// Using setters to change values
+person1.setName("Bob");
+person1.setAge(30);
+person1.printInfo();
+}
+}
+
+Output:
+Name: Alice, Age: 25
+Name: Bob, Age: 30
+
