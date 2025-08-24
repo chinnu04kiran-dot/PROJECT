@@ -1,0 +1,38 @@
+// Define the Car class
+class Car {
+    // Attributes (fields)
+    String model;
+    String color;
+
+    // Constructor to initialize the car
+    Car(String model, String color) {
+        this.model = model;
+        this.color = color;
+    }
+
+    // Method to start the car
+    void start() {
+        System.out.println(model + " (" + color + ") is starting.");
+    }
+
+    // Method to stop the car
+    void stop() {
+        System.out.println(model + " (" + color + ") is stopping.");
+    }
+}
+
+// Main class to test the Car class
+public class CarTest {
+    public static void main(String[] args) {
+        // Create a Car object
+        Car myCar = new Car("Toyota Camry", "Red");
+
+        // Use the methods
+        myCar.start();
+        myCar.stop();
+    }
+}
+output:
+Toyota Camry (Red) is starting.
+Toyota Camry (Red) is stopping.
+
