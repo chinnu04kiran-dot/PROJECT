@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class FibonacciRecursion {
+
+    // Recursive method to calculate nth Fibonacci number
+    public static int fibonacci(int n) {
+        if (n <= 1) {
+            return n;
+        }
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Ask the user for the number of terms (b-th term)
+        System.out.print("Enter the number of terms (b): ");
+        int b = scanner.nextInt();
+
+        System.out.println("Fibonacci sequence up to " + b + " terms:");
+
+        for (int i = 0; i < b; i++) {
+            System.out.print(fibonacci(i) + " ");
+        }
+
+        scanner.close();
+    }
+}
+output:
+Enter the number of terms (b): 7
+Fibonacci sequence up to 7 terms:
+0 1 1 2 3 5 8 
